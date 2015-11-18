@@ -31,8 +31,10 @@ describe('test Promise', function() {
 
     it.only('reduce', function(done) {
         this.timeout(0);
-        Promise.reduce(_.range(10), function(total, i) {
-            return p1(i);
+        var a = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+        Promise.reduce(a, function(previous, current, index, length) {
+            console.log('previous:', previous, ', current:', current);
+            return p1(current);
         }, 0).then(function(r) {
             console.log('all done:', r);
             done();

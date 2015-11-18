@@ -1,0 +1,30 @@
+{
+  "name": "promise-test",
+  "version": "1.0.0",
+  "description": "promise test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymyang/promise-test.git"
+  },
+  "keywords": [
+    "promise",
+    "bluebird"
+  ],
+  "author": "ymyang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ymyang/promise-test/issues"
+  },
+  "homepage": "https://github.com/ymyang/promise-test#readme",
+  "dependencies": {
+    "bluebird": "^2.9.34"
+  },
+  "devDependencies": {
+    "lodash": "^3.10.1",
+    "mocha": "^2.2.5"
+  }
+}
